@@ -1,0 +1,49 @@
+body{
+    background-color: #1b1b1b;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+/* To adapt an image width to a slider */
+.homepage-slider-section .splide__slide img {
+	width: 100%;
+	height: auto;
+}
+
+
+.sub-banner-section .sub-banner img{
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Add spacing to separate sub banners from main banner */
+.sub-banner-section {
+    margin-top: 0.2rem;
+}
+
+/* 992px inclusive */
+@media all and (min-width: 992px){
+    .splide{
+        width: 66.5%;
+    }
+
+    .homepage-slider-section{
+        display: flex;
+        align-items: center;
+    }
+
+    .sub-banner-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 0.25rem;
+    }
+
+    .sub-banner-section .sub-banner img{
+        width: 100%;
+        object-fit: contain;
+    }
+}

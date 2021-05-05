@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplideJS Slider Example</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class ="homepage-slider-section">
+
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <!-- picture.png 400w = @media screen and (max-width: 400width)
+                        Anything less than the specified width will have the style/image -->
+                        <a href="#slide1"><img
+                        data-splide-lazy="https://placekitten.com/1400/600"
+                        data-splide-lazy-srcset="https://placekitten.com/400/500 400w, https://placekitten.com/1400/600 992w"
+                        alt="kitty1">
+                        </a>
+                </li>
+                    <li class="splide__slide"><a href="#slide2"><img
+                        data-splide-lazy="https://placekitten.com/1400/600"
+                        data-splide-lazy-srcset="https://placekitten.com/400/500 400w, https://placekitten.com/1400/600 992w"
+                        alt="kitty1 again">
+                        </a>
+                </li>
+                    <li class="splide__slide"><a href="#slide3">
+                    <img
+                        data-splide-lazy="https://placekitten.com/1400/600"
+                        data-splide-lazy-srcset="https://placekitten.com/400/500 400w, https://placekitten.com/1400/600 992w"
+                        alt="kitty1 again again">
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sub-banner-section">
+            <div class="sub-banner">
+                <img src="https://placekitten.com/1400/600" alt="this kitty again?">
+            </div>
+    
+            <div class="sub-banner sub-banner-bottom">
+                <img src="https://placekitten.com/1400/600" alt="damn kitty">
+            </div>
+        </div>
+        
+       
+
+        <!-- end homepage-slider-section -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>
